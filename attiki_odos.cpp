@@ -55,10 +55,10 @@ void attiki_odos::operate()
 {
     int i;
     cout<<endl;
-    cout<<"---------------------------------------------------"<<endl;
+    cout<<"------------------------------------------------------"<<endl;
     cout<<"-> Total number of vehicles moving in the highway: "<<get_total_number_of_vehicles()<<endl;
     // cout<<"Kinountai sunolika "<<get_total_number_of_vehicles()<<" oxhmata sthn Attiki Odo"<<endl;
-    cout<<"---------------------------------------------------"<<endl;
+    cout<<"------------------------------------------------------"<<endl;
     cout<<endl;
     for(i=segs_array.size()-1;i>=0;i--)//gia ola ta tmhmata ths attikhs odou arxizontas apo to teleutaio
     {
