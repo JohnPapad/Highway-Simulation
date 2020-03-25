@@ -9,7 +9,8 @@ seg::seg(const int & K,const unsigned int & number_of_segs,const double & posost
     static int counter=1;  //ta segments arxizoun apo 1 mexri Nsegs
     seg_number=counter;
     counter++;
-    cout<<"Dwste th megisth xwrhtikothta tou tmhmatos #"<<seg_number<<" ths attikhs odou"<<endl;
+    cout<<"-> Please enter the capacity of highway segment #"<<seg_number<<endl;
+    // cout<<"Dwste th megisth xwrhtikothta tou tmhmatos #"<<seg_number<<" ths attikhs odou"<<endl;
     cin>>capacity;
     unsigned int number_of_vehicles=rand()%capacity + 1;//[1,capacity]
 
@@ -129,8 +130,9 @@ int seg::enter(const unsigned int & number_of_segs)
     if(x==1)
     {
         cout<<"//////////////////////////////////////////////////"<<endl;
-        cout<<"Ka8usterhseis sthn eisodo tou komvou #"<<seg_number-1<<endl;
-        cout<<"//////////////////////////////////////////////////"<<endl;
+        // cout<<"Ka8usterhseis sthn eisodo tou komvou #"<<seg_number-1<<endl;
+        cout<<"-> Delays on entrance of interchange #"<<seg_number-1<<endl; 
+        // cout<<"//////////////////////////////////////////////////"<<endl;
     }
     return x;
 }
@@ -159,10 +161,11 @@ int seg::pass(seg * previous_seg)//seg_ptr : to prohgoumeno tmhma ths attikhs od
     could_not_pass=number_of_ready_to_pass-counter;
 
     if(could_not_pass>0)//an uparxei estw kai ena pou htan etoimo na perasei kai den mporese
-    {   //ektupwse mhnuma ka8usterhshs
+    {   
         cout<<"//////////////////////////////////////////////////"<<endl;
-        cout<<"Ka8usterhseis meta ton komvo #"<<seg_number-1<<endl;
-        cout<<"//////////////////////////////////////////////////"<<endl;
+        // cout<<"Ka8usterhseis meta ton komvo #"<<seg_number-1<<endl;
+        cout<<"-> Delays after interchange #"<<seg_number-1<<endl;
+        // cout<<"//////////////////////////////////////////////////"<<endl;
         return 1; //exei ektupw8ei mhnuma gia ka8usterhsh
     }
     else
@@ -232,7 +235,8 @@ void seg::operate(const int & index,const int & number_of_segs,seg * previous_se
     if((enter_flag==0)&&(pass_flag==0))
     {
         cout<<"//////////////////////////////////////////////////"<<endl;
-        cout<<"Threiste tis apostaseis asfaleias meta ton komvo #"<<seg_number-1<<endl;
-        cout<<"//////////////////////////////////////////////////"<<endl;
+        cout<<"-> Keep a safe distance in the segment after interchange #"<<seg_number-1<<endl;
+        // cout<<"Threiste tis apostaseis asfaleias meta ton komvo #"<<seg_number-1<<endl;
+        // cout<<"//////////////////////////////////////////////////"<<endl;
     }
 }

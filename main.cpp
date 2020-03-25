@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     if(argc!=5)
     {
-        cout<<"Wrong number of arguments in main function is given"<<endl;
+        cout<<"-> ERROR: Wrong number of command line arguments given"<<endl;
         return -1;
     }
 
@@ -22,16 +22,20 @@ int main(int argc, char *argv[])
     int N=atoi(argv[3]);
     double Percent=atof(argv[4]);
 
-    cout<<"Number of segments is:"<<NSegs<<endl;
-    cout<<"K is:"<<K<<endl;
-    cout<<"Kukloi leitourgias (N) is:"<<N<<endl;
-    cout<<"Percent is:"<<Percent<<endl;
+    cout<<"--> Command line arguments given <--"<<endl;
+    cout<<"-> NSegs: "<<NSegs<<endl;
+    cout<<"-> K: "<<K<<endl;
+    cout<<"-> N: "<<N<<endl;
+    cout<<"-> Percent: "<<Percent<<endl;
+    cout<<"------------------------------"<<endl;
 
     attiki_odos test(NSegs,K,Percent);
 
     cout<<endl;
-    cout<<"Autokinhtodromos se leitourgia"<<endl;
-    cout<<endl;
+    cout<<"------------------------------------------"<<endl;
+    cout<<"--> 'Attiki Odos' Highway is operating <--"<<endl;
+    cout<<"------------------------------------------"<<endl;
+    // cout<<endl;
     //test.print();
     for(i=0;i<N;i++)
     {
