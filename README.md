@@ -46,7 +46,7 @@ The following are passed as command line arguments:
 ## How to run
 
 ```
-make (to compile)
-./highway_sim <NSegs> <K> <N> <Percent>
-make clean (to delete all .o files)
+$ make (to compile)
+$ ./highway_sim <NSegs> <K> <N> <Percent>
+$ make clean (to delete all .o files)
 ```
