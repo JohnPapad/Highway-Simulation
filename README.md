@@ -1,5 +1,5 @@
 # Highway Simulation 
-A simulation for the "Attiki Odos" Highway, implemented for the class ***"Object Oriented Programming"***
+A simulation for the "Attiki Odos" Highway, implemented for the class of ***"Object Oriented Programming"*** in the the Informatics Department.
 
 ## "Attiki Odos" Highway description
 
